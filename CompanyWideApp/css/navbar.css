@@ -1,0 +1,727 @@
+.nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navLink {
+    display: block;
+    padding: 0.5em 1em;
+}
+
+.navLink:focus, .navLink:hover {
+    text-decoration-color: #FF8C00;
+    text-effect: #FF8C00;
+}
+
+.navLink.disabled {
+    color: #636c72;
+    cursor: not-allowed;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .navLink {
+    border: 1px solid transparent;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
+
+.nav-tabs .navLink:focus, .nav-tabs .navLink:hover {
+    border-color: #eceeef #eceeef #ddd;
+    color: #FF8C00;
+}
+
+.nav-tabs .navLink.disabled {
+    color: #FF8C00;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-tabs .navLink.active,
+.nav-tabs .nav-item.show .navLink {
+    color: #FF8C00;
+    background-color: #fff;
+    border-color: #ddd #ddd #fff;
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.nav-pills .navLink {
+    border-radius: 0.25rem;
+}
+
+.nav-pills .navLink.active,
+.nav-pills .nav-item.show .navLink {
+    color: #fff;
+    cursor: default;
+    background-color: #0275d8;
+}
+
+.nav-fill .nav-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.nav-justified .nav-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.navBar {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+
+.navBarBrand {
+    display: inline-block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navBarBrand:focus, .navBarBrand:hover {
+    text-decoration: none;
+}
+
+.navBarNav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navBarNav .navLink {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navBar-text {
+    display: inline-block;
+    padding-top: .425rem;
+    padding-bottom: .425rem;
+}
+
+.navBarCol {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navBarCol:focus, .navBarCol:hover {
+    text-decoration: none;
+}
+
+.navBarColIcon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.navBarCol-left {
+    position: absolute;
+    left: 1rem;
+}
+
+.navBarColRight {
+    position: absolute;
+    right: 1rem;
+}
+
+@media (max-width: 575px) {
+    .navBar-toggleable .navBarNav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+    .navBar-toggleable > .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .navBar-toggleable {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBar-toggleable .navBarNav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navBar-toggleable .navBarNav .navLink {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navBar-toggleable > .container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBar-toggleable .navBarCollapse {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        width: 100%;
+    }
+    .navBar-toggleable .NavBarCol {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navBar-toggleable-sm .navBarNav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+    .navBar-toggleable-sm > .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navBar-toggleable-sm {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBar-toggleable-sm .navBarNav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navBar-toggleable-sm .navBarNav .navLink {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navBar-toggleable-sm > .container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBar-toggleable-sm .navBarCollapse {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        width: 100%;
+    }
+    .navBar-toggleable-sm .NavBarCol {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .navBarToggleMd .navBarNav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+    .navBarToggleMd > .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navBarToggleMd {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBarToggleMd .navBarNav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navBarToggleMd .navBarNav .navLink {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navBarToggleMd > .container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBarToggleMd .navBarCollapse {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        width: 100%;
+    }
+    .navBarToggleMd .NavBarCol {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navBar-toggleable-lg .navBarNav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+    .navBar-toggleable-lg > .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navBar-toggleable-lg {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBar-toggleable-lg .navBarNav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navBar-toggleable-lg .navBarNav .navLink {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navBar-toggleable-lg > .container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .navBar-toggleable-lg .navBarCollapse {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        width: 100%;
+    }
+    .navBar-toggleable-lg .NavBarCol {
+        display: none;
+    }
+}
+
+.navBar-toggleable-xl {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navBar-toggleable-xl .navBarNav .dropdown-menu {
+    position: static;
+    float: none;
+}
+
+.navBar-toggleable-xl > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navBar-toggleable-xl .navBarNav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.navBar-toggleable-xl .navBarNav .navLink {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.navBar-toggleable-xl > .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navBar-toggleable-xl .navBarCollapse {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+}
+
+.navBar-toggleable-xl .NavBarCol {
+    display: none;
+}
+
+.navBar-light .navBarBrand,
+.navBar-light .NavBarCol {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.navBar-light .navBarBrand:focus, .navBar-light .navBarBrand:hover,
+.navBar-light .NavBarCol:focus,
+.navBar-light .NavBarCol:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.navBar-light .navBarNav .navLink {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navBar-light .navBarNav .navLink:focus, .navBar-light .navBarNav .navLink:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navBar-light .navBarNav .navLink.disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.navBar-light .navBarNav .open > .navLink,
+.navBar-light .navBarNav .active > .navLink,
+.navBar-light .navBarNav .navLink.open,
+.navBar-light .navBarNav .navLink.active {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.navBar-light .NavBarCol {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navBar-light .navBarColIcon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navBar-light .navBar-text {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navBarInverse .navBarBrand,
+.navBarInverse .NavBarCol {
+    color: white;
+}
+
+.navBarInverse .navBarBrand:focus, .navBarInverse .navBarBrand:hover,
+.navBarInverse .NavBarCol:focus,
+.navBarInverse .NavBarCol:hover {
+    color: white;
+}
+
+.navBarInverse .navBarNav .navLink {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navBarInverse .navBarNav .navLink:focus, .navBarInverse .navBarNav .navLink:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navBarInverse .navBarNav .navLink.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.navBarInverse .navBarNav .open > .navLink,
+.navBarInverse .navBarNav .active > .navLink,
+.navBarInverse .navBarNav .navLink.open,
+.navBarInverse .navBarNav .navLink.active {
+    color: white;
+}
+
+.navBarInverse .NavBarCol {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navBarInverse .navBarColIcon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navBarInverse .navBar-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+.fixedTop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+
+
+
+
+
+.searchBar:before,
+.searchBar:after {
+    content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    margin: 0 0 0 -400px;
+    position: absolute;
+    width: 800px;
+}
+
+
+
+
+
+.searchBar input {
+    background: #222;
+    background: linear-gradient(#333, #222);
+    border: 1px solid #444;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 2px 0 #000;
+    color: #888;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    height: 36px;
+    margin: 0;
+    padding: 0 30px;
+    text-shadow: 0 -1px 0 #000;
+    width: 300px;
+}
+
+.ie .searchBar input {
+    line-height: 40px;
+}
+
+.searchBar input::-webkit-input-placeholder {
+    color: #888;
+}
+
+.searchBar input:-moz-placeholder {
+    color: #888;
+}
+
+.searchBar input:focus {
+    animation: glow 800ms ease-out infinite alternate;
+    border-color: #000;
+    box-shadow: 0 0 5px #000, inset 0 0 5px #FF8C00, 0 2px 0 #000;
+    color: #efe;
+    outline: none;
+}
+
+.searchBar input:focus::-webkit-input-placeholder {
+    color: #000;
+}
+
+.searchBar input:focus:-moz-placeholder {
+    color: #000;
+}
+
+.searchBar button {
+    background: #222;
+    background: linear-gradient(#333, #222);
+    box-sizing: content-box;
+    border: 1px solid #444;
+    border-left-color: #000;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 0 #000;
+    color: #cccccc;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    height: 34px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 -1px 0 #000;
+    width: 80px;
+}
+
+.searchBar button:hover,
+.searchBar button:focus {
+    background: #292929;
+    background: linear-gradient(#393939, #292929);
+    color: #FF8C00;
+    outline: none;
+}
+
+.searchBar button:active {
+    background: #00000;
+    background: #FF8C00;
+    box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+    top: 1px;
+}
+
+
+
+.bgInverse {
+    background-color: #292b2c !important;
+}
+
+a.bgInverse:focus, a.bgInverse:hover {
+    background-color: #101112 !important;
+}
+
+
+
+
+/*** Footer ****/
+
+.foot {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
